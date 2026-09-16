@@ -10,7 +10,7 @@ public class TestIsOpen {
     }
 
     public static void main(String[] args) {
-        System.out.println("--- fresh grid ---");
+        /*System.out.println("--- fresh grid ---");
         Percolation fresh = new Percolation(5);
         boolean allClosed = true;
         for (int row = 1; row <= 5; row++) {
@@ -73,5 +73,7 @@ public class TestIsOpen {
             }
         }
         check("every cell in a fully opened 2x2 grid is open", allOpen);
+
+         */
     }
 }

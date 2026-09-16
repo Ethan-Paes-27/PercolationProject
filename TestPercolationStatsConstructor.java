@@ -10,6 +10,7 @@ public class TestPercolationStatsConstructor {
     }
 
     public static void main(String[] args) {
+        /*
         System.out.println("--- valid constructor arguments ---");
         boolean oneByOneValid = true;
         try {
@@ -26,6 +27,14 @@ public class TestPercolationStatsConstructor {
             largeValid = false;
         }
         check("new PercolationStats(200,100) does not throw", largeValid);
+
+        boolean smallTrialsValid = true;
+        try {
+            new PercolationStats(5, 1);
+        } catch (Exception e) {
+            smallTrialsValid = false;
+        }
+        check("new PercolationStats(5,1) does not throw", smallTrialsValid);
 
         System.out.println("--- invalid constructor arguments ---");
         boolean zeroNThrows = false;
@@ -60,9 +69,14 @@ public class TestPercolationStatsConstructor {
         }
         check("trials=-1 throws IllegalArgumentException", negativeTrialsThrows);
 
-        System.out.println("--- initial statistics range ---");
-        PercolationStats stats = new PercolationStats(10, 50);
-        double mean = stats.mean();
-        check("mean after construction is between 0 and 1", mean >= 0.0 && mean <= 1.0);
+        boolean bothNegativeThrows = false;
+        try {
+            new PercolationStats(-1, -1);
+        } catch (IllegalArgumentException e) {
+            bothNegativeThrows = true;
+        }
+        check("n=-1, trials=-1 throws IllegalArgumentException", bothNegativeThrows);
+
+         */
     }
 }

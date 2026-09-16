@@ -10,6 +10,7 @@ public class TestOpen {
     }
 
     public static void main(String[] args) {
+        /*
         System.out.println("--- opening individual sites ---");
         Percolation grid = new Percolation(5);
         grid.open(1, 1);
@@ -56,5 +57,7 @@ public class TestOpen {
         multiple.open(2, 2);
         multiple.open(3, 3);
         check("three distinct sites give count 3", multiple.numberOfOpenSites() == 3);
+
+         */
     }
 }

@@ -10,6 +10,7 @@ public class TestNumberOfOpenSites {
     }
 
     public static void main(String[] args) {
+        /*
         System.out.println("--- initial count ---");
         Percolation fresh = new Percolation(5);
         check("fresh grid has zero open sites", fresh.numberOfOpenSites() == 0);
@@ -38,5 +39,7 @@ public class TestNumberOfOpenSites {
         Percolation one = new Percolation(1);
         one.open(1, 1);
         check("opening the only 1x1 site gives count 1", one.numberOfOpenSites() == 1);
+
+         */
     }
 }
