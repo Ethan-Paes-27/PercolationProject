@@ -10,7 +10,7 @@ public class TestConfidenceLoHi {
     }
 
     public static void main(String[] args) {
-        /*System.out.println("--- mean is between lo and hi ---");
+        /* System.out.println("--- mean is between lo and hi ---");
         PercolationStats large = new PercolationStats(200, 1000);
         double lo = large.confidenceLo();
         double hi = large.confidenceHi();
